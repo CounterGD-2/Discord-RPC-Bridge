@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DiscordMobileBridge configuration",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "showServerAddress": {
+      "type": "boolean",
+      "default": false
+    },
+    "showWorldName": {
+      "type": "boolean",
+      "default": false
+    },
+    "showElapsedTime": {
+      "type": "boolean",
+      "default": true
+    },
+    "refreshIntervalTicks": {
+      "type": "integer",
+      "minimum": 10,
+      "maximum": 200,
+      "default": 40
+    },
+    "simpleRpcAdapterEnabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "discordPresenceAdapterEnabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "mobileTransportEnabled": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

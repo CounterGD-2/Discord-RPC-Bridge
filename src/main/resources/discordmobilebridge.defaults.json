@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "showServerAddress": false,
+  "showWorldName": false,
+  "showElapsedTime": true,
+  "refreshIntervalTicks": 40,
+  "simpleRpcAdapterEnabled": false,
+  "discordPresenceAdapterEnabled": false,
+  "mobileTransportEnabled": false
+}
