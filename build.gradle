@@ -69,17 +69,12 @@ tasks.named('test', Test).configure {
     enabled = false
 }
 
-// Run the Presence Core smoke test directly.
-tasks.register('smokeTest') {
+tasks.register('smokeTest', JavaExec) {
     group = 'verification'
     description = 'Runs the Discord Mobile Bridge Presence Core smoke test.'
 
     dependsOn tasks.named('testClasses')
 
-    doLast {
-        javaexec {
-            classpath = sourceSets.test.runtimeClasspath
-            mainClass = 'dev.countergd.discordmobilebridge.presence.PresenceCoreTest'
-        }
-    }
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'dev.countergd.discordmobilebridge.presence.PresenceCoreTest'
 }
