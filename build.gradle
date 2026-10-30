@@ -26,7 +26,7 @@ processResources {
     inputs.property 'version', project.version
     filesMatching('META-INF/neoforge.mods.toml') {
         expand 'mod_version': project.version, 'mod_id': mod_id, 'mod_name': mod_name,
-               'minecraft_version': minecraft_version, 'neo_version': neo_version
+               'minecraft_version': minecraft_version, 'neo_version': neo_version, 'minecraft_version_range': minecraft_version_range
     }
 }
 tasks.register('smokeTest') {
